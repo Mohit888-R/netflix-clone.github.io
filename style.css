@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e50914;
+    --primary-color: #ff000d;
 }
 
 * {
@@ -41,7 +41,7 @@ img {
 
 .showcase {
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     position: relative;
     background: url('./img/background.jpg') no-repeat center center/cover;
 }
@@ -91,7 +91,7 @@ img {
     border-radius: 5px;
 }
 
-.btn-lg {
+.btnlg {
     font-size: 2rem;
     padding: 0.8rem 2.5rem;
     text-transform: uppercase;
@@ -148,13 +148,19 @@ hr {
     border: 1px solid rgb(88, 85, 85);
 }
 
+.content1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .enjoy-tv {
     display: flex;
+    flex-wrap: wrap;
     height: 60vh;
 }
 
 .enjoy-tv .text {
-    width: 40%;
+    width: 50%;
     position: relative;
     margin: auto;
     flex-direction: column;
@@ -172,6 +178,10 @@ hr {
 .text h3 {
     font-size: 20px;
     flex-wrap: wrap;
+}
+
+.image {
+    width: 40%;
 }
 
 .enjoy-tv .image img {
@@ -193,10 +203,11 @@ hr {
 .enjoy-mobile {
     display: flex;
     height: 60vh;
+    flex-wrap: wrap;
 }
 
 .enjoy-mobile .text {
-    width: 40%;
+    width: 50%;
     position: relative;
     margin: auto;
     flex-direction: column;
@@ -216,13 +227,17 @@ hr {
     flex-wrap: wrap;
 }
 
+.enjoy-mobile .image {
+    width: 50%;
+}
+
 .enjoy-mobile .image img {
     position: relative;
-    width: 100%;
+    width: 30%;
     height: 70%;
     top: 50%;
-    left: 100%;
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translate(-30%, -50%);
     border: 5px solid rgba(88, 79, 79, 0.349);
 }
 
@@ -235,10 +250,11 @@ hr {
 .enjoy-everywhere {
     display: flex;
     height: 60vh;
+    flex-wrap: wrap;
 }
 
 .enjoy-everywhere .text {
-    width: -40%;
+    width: 50%;
     position: relative;
     margin: auto;
     flex-direction: column;
@@ -258,10 +274,14 @@ hr {
     flex-wrap: wrap;
 }
 
+.enjoy-everywhere .image {
+    width: 50%;
+}
+
 .enjoy-everywhere .image img {
     position: relative;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-80%, -50%);
@@ -276,10 +296,11 @@ hr {
 .enjoy-children {
     display: flex;
     height: 60vh;
+    flex-wrap: wrap;
 }
 
 .enjoy-children .text {
-    width: 40%;
+    width: 50%;
     position: relative;
     margin: auto;
     flex-direction: column;
@@ -299,9 +320,13 @@ hr {
     flex-wrap: wrap;
 }
 
+.enjoy-children .image {
+    width: 40%;
+}
+
 .enjoy-children .image img {
     position: relative;
-    width: 80%;
+    width: 70%;
     height: 80%;
     top: 50%;
     left: 50%;
@@ -317,8 +342,129 @@ hr {
     font-size: 40px;
 }
 
+.faq {
+    cursor: pointer;
+    margin-right: 30%;
+    color: white;
+    padding: 40px;
+}
+
+summary {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(63, 85, 85, 0.822);
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: space-between;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+details div>p {
+    margin-top: 1px;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 30%;
+    background-color: rgba(63, 85, 85, 0.822);
+    text-align: justify;
+    padding: 20px;
+}
+
 hr {
     height: 8px;
     background-color: rgb(88, 85, 85);
     border: 1px solid rgb(88, 85, 85);
+}
+
+footer {
+    padding: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+footer #foot-que {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#foot-link {
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid white; */
+    justify-content: center;
+    line-height: 30px;
+    /* align-items: flex-start; */
+}
+
+.link12 {
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    /* justify-content: center; */
+}
+
+.link12 #foot-link1 {
+    /* justify-content: left; */
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.link12 #foot-link2 {
+    /* justify-content: right; */
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.link34 {
+    width: 50%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    /* justify-content: center; */
+}
+
+.link34 #foot-link3 {
+    /* justify-content: left; */
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.link34 #foot-link4 {
+    /* justify-content: right; */
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.foot-logo {
+    text-align: left;
 }
